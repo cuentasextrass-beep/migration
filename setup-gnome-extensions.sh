@@ -11,9 +11,16 @@ echo "========================================="
 echo ""
 
 # Step 1: Install GNOME Tweaks and Extensions App first
+echo "Step 0: Upadating & Installing repositories..."
+echo "======================================================"
+sudo dnf install -y epel-release
+sudo dnf config-manager --set-enabled crb
+sudo dnf update -y
+sudo dnf upgrade -y
 echo "Step 1: Installing GNOME Tweaks and Extensions App..."
 echo "======================================================"
-sudo dnf install -y gnome-tweaks gnome-extensions-app
+sudo dnf install -y gnome-tweaks
+sudo dnf install -y gnome-extensions-app
 echo "GNOME Tweaks and Extensions App installed successfully!"
 echo ""
 
@@ -30,10 +37,12 @@ echo "=============================================="
 if ! command -v flatpak &> /dev/null; then
     echo "Installing Flatpak..."
     sudo dnf install -y flatpak
-    sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 fi
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo "Installing Extension Manager from Flathub..."
+echo "IF ERROE APPEARS RESTART MACHINE"
+echo "=============================================="
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 
 echo ""
