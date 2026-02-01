@@ -1,0 +1,47 @@
+ sh DJV/sbuild-linux.sh
+build-Release/bin/djv/djv DJV/etc/SampleData/BART_2021-02-07.0000.jpg
++ BUILD_TYPE=Release
++ '[' 0 -eq 1 ']'
++ export JOBS=4
++ JOBS=4
++ export TLRENDER_NET=OFF
++ TLRENDER_NET=OFF
++ export TLRENDER_OCIO=ON
++ TLRENDER_OCIO=ON
++ export TLRENDER_JPEG=ON
++ TLRENDER_JPEG=ON
++ export TLRENDER_TIFF=ON
++ TLRENDER_TIFF=ON
++ export TLRENDER_EXR=ON
++ TLRENDER_EXR=ON
++ export TLRENDER_FFMPEG=ON
++ TLRENDER_FFMPEG=ON
++ export TLRENDER_FFMPEG_MINIMAL=OFF
++ TLRENDER_FFMPEG_MINIMAL=OFF
++ export TLRENDER_OIIO=ON
++ TLRENDER_OIIO=ON
++ export TLRENDER_USD=OFF
++ TLRENDER_USD=OFF
++ export TLRENDER_BMD=OFF
++ TLRENDER_BMD=OFF
++ export TLRENDER_BMD_SDK=
++ TLRENDER_BMD_SDK=
++ export FTK_API=GL_4_1
++ FTK_API=GL_4_1
++ export BUILD_SHARED_LIBS=OFF
++ BUILD_SHARED_LIBS=OFF
++ sh DJV/etc/Linux/linux-sbuild.sh Release
++ BUILD_TYPE=Release
++ cmake -S DJV/etc/SuperBuild -B sbuild-Release -DTLRENDER_NET=OFF -DTLRENDER_OCIO=ON -DTLRENDER_JPEG=ON -DTLRENDER_TIFF=ON -DTLRENDER_EXR=ON -DTLRENDER_FFMPEG=ON -DTLRENDER_FFMPEG_MINIMAL=OFF -DTLRENDER_USD=OFF -DTLRENDER_OIIO=ON -DTLRENDER_BMD=OFF -DTLRENDER_BMD_SDK= -Dftk_API=GL_4_1 -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/tomas/apps/install-Release -DCMAKE_PREFIX_PATH=/home/tomas/apps/install-Release
+DJV/etc/Linux/linux-sbuild.sh: line 8: cmake: command not found
++ cmake --build sbuild-Release -j 4 --config Release
+DJV/etc/Linux/linux-sbuild.sh: line 26: cmake: command not found
++ sh DJV/etc/Linux/linux-build.sh Release
++ BUILD_TYPE=Release
++ cmake -S DJV -B build-Release -DTLRENDER_NET=OFF -DTLRENDER_OCIO=ON -DTLRENDER_EXR=ON -DTLRENDER_FFMPEG=ON -DTLRENDER_OIIO=ON -DTLRENDER_USD=OFF -DTLRENDER_BMD=OFF -Dftk_API=GL_4_1 -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/tomas/apps/install-Release -DCMAKE_PREFIX_PATH=/home/tomas/apps/install-Release
+DJV/etc/Linux/linux-build.sh: line 8: cmake: command not found
++ cmake --build build-Release -j 4 --config Release
+DJV/etc/Linux/linux-build.sh: line 22: cmake: command not found
+bash: build-Release/bin/djv/djv: No such file or directory
+tomas@localhost:~/apps$ build-Release/bin/djv/djv 
+bash: build-Release/bin/djv/djv: No such file or directory
