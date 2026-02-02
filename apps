@@ -26,7 +26,7 @@ sudo dnf install -y timeshift
 sudo dnf install -y tmux
 sudo dnf install -y unrar
 sudo dnf install -y vlc
-----***wget
+sudo dnf install -y wget
 
 ############
 ###########Flatpak
@@ -38,7 +38,11 @@ flatpak install flathub org.nickvision.tubeconverter
 
 
 SNAP
-blender
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install blender --classic
+
+
 
 ############
 ###CUSTOM REPO
@@ -48,24 +52,7 @@ sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-releas
 sudo dnf install brave-browser
 
 
-####
-###APP IMAGE
 
-
-sudo snap install blender --classic
-
-
-
-
-
-####################
-####Downloaded
-
-djv
-parsec
-pureref
-############
-#######Custom scripts
 
 #################
 #########EXTENSIONS
