@@ -33,7 +33,6 @@ alias quixel='/home/tomas/Bridge.AppImage --no-sandbox'
 alias fspy='/home/tomas/fspy-1.0.3-x86_64.AppImage'
 alias byplay='/home/tomas/Byplay-Desktop-2.0.11.AppImage'
 alias makehuman='python3 /home/tomas/makehuman/makehuman/makehuman.py'
-alias delighter='/home/tomas/delighter/delighter'
 
 alias cascadeur='/media/NAS/ToMarsLabs/data/Library/software/cascadeur-linux/cascadeur'
 
