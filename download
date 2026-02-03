@@ -1,5 +1,7 @@
 
-########RPM
+#########
+##--RPM
+#########
 
 cd
 cd INSTALL
@@ -46,7 +48,7 @@ flamenco
 Houdini
 Foundry
 Make Human
-Meshroom
+
 
 
 ollama
