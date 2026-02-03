@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Source the Kratos environment for the current project
+# (Adjust this to how you actually source your environments)
+source "$HOME/path/to/kratos_env.sh"
+
+# Create the database directory if it doesn't exist
+DAVINCI_DB_PATH="$JOB/DAVINCI/Database"
+mkdir -p "$DAVINCI_DB_PATH"
+
+# Launch Davinci Resolve with the project database
+distrobox enter rockylinux -- resolve --dbpath "$DAVINCI_DB_PATH"

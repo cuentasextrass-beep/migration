@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Ask for the directory path
+echo -n "Enter the directory path: "
+read DIR
+
+# Check if directory exists
+if [ ! -d "$DIR" ]; then
+    echo "Error: Directory does not exist."
+    exit 1
+fi
+
+# Rename files and directories recursively
+find "$DIR" -depth -name "* *" | while read FILE; do
+    NEW_FILE="$(dirname "$FILE")/$(basename "$FILE" | tr ' ' '_')"
+    if [ "$FILE" != "$NEW_FILE" ]; then
+        mv "$FILE" "$NEW_FILE"
+        echo "Renamed: $FILE -> $NEW_FILE"
+    fi
+done
+
+echo "Done!"
+
