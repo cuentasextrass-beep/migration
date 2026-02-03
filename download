@@ -1,4 +1,3 @@
-sudo dnf install -y fuse fuse-libs
 
 ########RPM
 
@@ -20,15 +19,23 @@ Foundry
 Make Human
 Meshroom
 
-fspy
+
 ollama
 web-ui
 cascadeur
 
 ######APPIMAGE
+sudo dnf install -y fuse fuse-libs
+sudo dnf install -y dbus-glib
+
+
 chmod + all filse in $HOME/apps
 
 ##Bridge - megascans
 ##byplay
+
+sudo dnf install -y dbus-glib
+##fspy
+
 
 #######Custom scripts
