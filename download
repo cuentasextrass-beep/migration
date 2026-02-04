@@ -18,7 +18,7 @@ sudo dnf install -y PureRef-2.1.0_x64.rpm
 
 #####-MESHROOM-#####
 wget -O ~/tar/Meshroom-2025.1.0-Linux.tar.gz "https://zenodo.org/records/16887472/files/Meshroom-2025.1.0-Linux.tar.gz"
-tar -xzf ~/tar/Meshroom-2025.1.0-Linux.tar.gz -C ~/apps
+tar -xzvf ~/tar/Meshroom-2025.1.0-Linux.tar.gz -C ~/apps
 mv ~/apps/Meshroom-* ~/apps/Meshroom
 
 
