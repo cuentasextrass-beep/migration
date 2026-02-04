@@ -1,16 +1,22 @@
 
 #########
-##--RPM
+##--sh and RPM
 #########
 
 cd
 cd INSTALL
 
+sh ~/INSTALL/install_houdini_launcher.sh
 sudo dnf install -y PureRef-2.1.0_x64.rpm
 
-#########
-##----TAR
-#########
+##############
+###--TAR
+##############
+
+###-CASCADEUR-###
+
+sudo dnf install -y libXScrnSaver
+sudo dnf install -y libXaw
 
 ####-REAPER-###
 ~/tar/reaper/install-reaper-apps.sh
