@@ -40,7 +40,7 @@ sudo dnf install -y fuse fuse-libs
 sudo dnf install -y dbus-glib
 
 
-chmod + all filse in $HOME/apps
+chmod + all filse in ~/apps
 
 ##Bridge 
 ##byplay
@@ -48,6 +48,8 @@ chmod + all filse in $HOME/apps
 sudo dnf install -y dbus-glib
 ##fspy
 ~/apps/djv/bin/djv
+
+wget -O ~/apps/FoundryLicensingUtility_8.1.6.AppImage "https://thefoundry.s3.amazonaws.com/products/licensing/releases/8.1.6/FoundryLicensingUtility_8.1.6.AppImage"
 
 ####Downloaded
 
