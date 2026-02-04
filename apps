@@ -1,4 +1,6 @@
-APT
+###############
+#####-APT-#####
+###############
 
 sudo dnf install -y audacity
 
@@ -28,8 +30,10 @@ sudo dnf install -y unrar
 sudo dnf install -y vlc
 sudo dnf install -y wget
 
-############
-###########Flatpak
+#####################
+#####--Flatpak--#####
+#####################
+
 sudo flatpak install flathub com.discordapp.Discord
 sudo flatpak install flathub com.github.iwalton3.jellyfin-media-player
 flatpak install flathub fr.handbrake.ghb
@@ -39,7 +43,10 @@ flatpak install flathub com.obsproject.Studio
 
 
 
-SNAP
+######################
+#######--SNAP--#######
+######################
+
 sudo dnf install snapd
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install blender --classic
